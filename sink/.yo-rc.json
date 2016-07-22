@@ -1,0 +1,7 @@
+{
+  "generator-spring-rest": {
+    "baseName": "sink",
+    "packageName": "com.rta.sink",
+    "packageNameGenerated": "com.rta.sink.generated"
+  }
+}

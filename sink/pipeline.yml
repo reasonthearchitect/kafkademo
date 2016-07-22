@@ -1,0 +1,28 @@
+---
+resources:
+- name: resource-sink
+  type: git
+  source:
+    uri: https://github.com/change/me.git
+    branch: master
+
+- name: sink-docker-image
+  type: docker-image
+  source:
+    repository: {{docker-hub-image-name}}
+    email: {{docker-hub-email}}
+    username: {{docker-hub-username}}
+    password: {{docker-hub-api-key}}
+
+jobs:
+- name: job-build-docker
+  public: true
+  serial: true
+  plan:
+    - get: resource-sink
+      trigger: true
+    - task: job-build
+      file: resource-sink/ci/tasks/package.yml
+    - put: sink-docker-image
+      params:
+        build: resource-jar
