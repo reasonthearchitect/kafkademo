@@ -18,6 +18,14 @@ The scenario appears as follows:
 
 ![Overview](overview.png)
 
+## Note
+
+All the components in the repository where generated with the [spring-rest-kafka generator](https://github.com/reasonthearchitect/generator-spring-rest)
+
+## Video Walkthrough
+
+The following is [a video walkthrough of the application](https://youtu.be/Zariq8tqK8A)
+
 ## Prerequisite
 
 In order to run the demo you will need to have the following on your machine.
