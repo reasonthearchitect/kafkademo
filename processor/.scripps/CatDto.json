@@ -1,0 +1,9 @@
+{
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ]
+}

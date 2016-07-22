@@ -1,0 +1,14 @@
+{
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "age",
+            "fieldType": "BigDecimal"
+        }
+    ]
+}

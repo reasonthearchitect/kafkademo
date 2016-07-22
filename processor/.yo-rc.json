@@ -1,0 +1,7 @@
+{
+  "generator-spring-rest": {
+    "baseName": "processor",
+    "packageName": "com.rta.processor",
+    "packageNameGenerated": "com.rta.processor.generated"
+  }
+}
