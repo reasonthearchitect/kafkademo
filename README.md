@@ -16,6 +16,7 @@ The scenario of the following POC is that a user will:
 
 The scenario appears as follows:
 
+![Overview](overview.png)
 
 ## Prerequisite
 
