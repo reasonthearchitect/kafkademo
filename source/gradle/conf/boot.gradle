@@ -1,0 +1,43 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'spring-boot'
+apply plugin: 'war'
+
+archivesBaseName = 'source'
+description = ''
+
+defaultTasks 'bootRun'
+
+bootRepackage {
+   mainClass = 'com.rta.source.Application'
+}
+
+springBoot {
+    mainClass = 'com.rta.source.Application'
+}
+
+bootRun {
+    addResources = false
+}
+
+configurations {
+    all*.exclude module : 'spring-boot-starter-logging'
+    all*.exclude module: "logback-classic"
+}
+
+dependencies {
+	compile group: 'org.springframework.boot',      name: 'spring-boot-actuator'
+    compile group: 'org.springframework.boot',      name: 'spring-boot-starter-security'
+    compile group: 'org.springframework.boot',      name: 'spring-boot-autoconfigure'
+    compile group: 'org.springframework.boot',      name: 'spring-boot-loader-tools'
+    compile group: 'org.springframework.boot',      name: 'spring-boot-starter-logging'
+    compile group: 'org.springframework.boot',      name: 'spring-boot-starter-aop'
+    compile('org.springframework.boot:spring-boot-starter-log4j')
+    compile ('org.springframework.boot:spring-boot-starter-web') {
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+
+    compile(group: 'org.springframework',           name: 'spring-context-support') {
+        exclude(module: 'quartz')
+    }
+}

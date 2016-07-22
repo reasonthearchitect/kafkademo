@@ -1,0 +1,5 @@
+sonarqube {
+    properties {
+        property "sonar.exclusions", "**/generated/**/*.java"
+    }
+}

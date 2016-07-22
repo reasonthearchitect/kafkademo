@@ -1,0 +1,7 @@
+{
+  "generator-spring-rest": {
+    "baseName": "source",
+    "packageName": "com.rta.source",
+    "packageNameGenerated": "com.rta.source.generated"
+  }
+}

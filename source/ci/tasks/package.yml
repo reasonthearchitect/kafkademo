@@ -1,0 +1,15 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: niaquinto/gradle}
+
+inputs:
+  - name: resource-source
+
+outputs:
+  - name: resource-jar
+
+run:
+  path: ./resource-source/ci/scripts/package.sh
+

@@ -1,0 +1,25 @@
+server:
+    port: 8090
+
+liquibase:
+    context: prod
+
+spring:
+    profiles:
+        active: prod
+    
+metrics:
+    jmx.enabled: true
+    spark:
+        enabled: false
+        host: localhost
+        port: 9999
+    graphite:
+        enabled: false
+        host: localhost
+        port: 2003
+        prefix: source
+
+http:
+    cache:
+        timeToLiveInDays: 31
