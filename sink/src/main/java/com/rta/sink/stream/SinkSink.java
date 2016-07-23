@@ -17,7 +17,6 @@ public class SinkSink {
     @Autowired
     ObjectMapper mapper;
 
-
     @StreamListener("dogin")
     public void sink(DogDto dogDto) {
         
