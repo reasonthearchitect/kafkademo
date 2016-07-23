@@ -30,11 +30,11 @@ The following is [a video walkthrough of the application](https://youtu.be/Zariq
 
 In order to run the demo you will need to have the following on your machine.
 
-* Java 8
+* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-* Gradle
+* [Gradle](https://gradle.org/gradle-download/)
 
-* Kafka and Zookeeper
+* Kafka and Zookeeper: See below
 
 # Running Kafka Locally
 
