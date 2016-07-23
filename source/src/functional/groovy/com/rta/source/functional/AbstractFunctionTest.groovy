@@ -1,7 +1,7 @@
 package com.rta.source.functional
 
 import com.jayway.restassured.RestAssured
-import com.tek.myservice.Application
+import com.rta.source.Application
 import org.junit.Before
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Value
