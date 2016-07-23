@@ -36,7 +36,7 @@ In order to run the demo you will need to have the following on your machine.
 
 * Kafka and Zookeeper: See below
 
-# Running Kafka Locally
+## Running Kafka Locally
 
 You can install Kafka locallyby [downloading the binary for your system](http://kafka.apache.org/downloads.html).
 
